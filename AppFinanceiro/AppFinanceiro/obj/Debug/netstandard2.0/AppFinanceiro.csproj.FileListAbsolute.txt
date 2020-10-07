@@ -1,0 +1,15 @@
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\bin\Debug\netstandard2.0\AppFinanceiro.deps.json
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\bin\Debug\netstandard2.0\AppFinanceiro.dll
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\bin\Debug\netstandard2.0\ref\AppFinanceiro.dll
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\bin\Debug\netstandard2.0\AppFinanceiro.pdb
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\obj\Debug\netstandard2.0\AppFinanceiro.csprojAssemblyReference.cache
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\obj\Debug\netstandard2.0\AppFinanceiro.AssemblyInfoInputs.cache
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\obj\Debug\netstandard2.0\AppFinanceiro.AssemblyInfo.cs
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\obj\Debug\netstandard2.0\AppFinanceiro.dll
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\obj\Debug\netstandard2.0\ref\AppFinanceiro.dll
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\obj\Debug\netstandard2.0\AppFinanceiro.pdb
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\obj\Debug\netstandard2.0\EntryPage.xaml.g.cs
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\obj\Debug\netstandard2.0\AppFinanceiro.csproj.CoreCompileInputs.cache
+C:\Users\hamon\Documents\SDM\PWP\TrabalhoFinal\AppFinanceiro\AppFinanceiro\AppFinanceiro\obj\Debug\netstandard2.0\XamlC.stamp

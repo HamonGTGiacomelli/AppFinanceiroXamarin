@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFinanceiro.MainPage"
+             xmlns:my="clr-namespace:AppFinanceiro.Model;">
+
+    <StackLayout Padding="10" BackgroundColor="#EEE">
+        <Frame BackgroundColor="White" CornerRadius="5">
+            <Grid VerticalOptions="StartAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Text="Saldo Atual" HorizontalTextAlignment="Start" FontAttributes="Bold"/>
+                <Label Grid.Column="1" x:Name="txtTotalValue" Text="R$ 0,00" HorizontalTextAlignment="End" FontAttributes="Bold"/>
+            </Grid>            
+        </Frame>        
+        <Label Text="Histórico" FontAttributes="Bold" FontSize="Large"/>
+        <ListView x:Name="lstHistory">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell >
+                        <ViewCell.View>
+                            <Frame BackgroundColor="White" CornerRadius="5" Margin="0,0,0,10">
+                                <Grid VerticalOptions="StartAndExpand">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="50"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{Binding title}" Grid.Column="0" Grid.Row="0" VerticalTextAlignment="Start" MaxLines="2" LineBreakMode="TailTruncation" FontAttributes="Bold">
+                                        <Label.Triggers>
+                                            <DataTrigger TargetType="Label" Binding="{Binding Path=type}" Value="{x:Static my:EntryType.CREDIT}">
+                                                <Setter Property="TextColor" Value="Green"/>
+                                            </DataTrigger>
+                                            <DataTrigger TargetType="Label" Binding="{Binding Path=type}" Value="{x:Static my:EntryType.DEBIT}">
+                                                <Setter Property="TextColor" Value="Red"/>
+                                            </DataTrigger>
+                                        </Label.Triggers>
+                                    </Label>
+                                    <Label Text="{Binding value, StringFormat='{0:C}'}" Grid.Column="0" Grid.Row="1" VerticalTextAlignment="End">
+                                        <Label.Triggers>
+                                            <DataTrigger TargetType="Label" Binding="{Binding Path=type}" Value="{x:Static my:EntryType.CREDIT}">
+                                                <Setter Property="TextColor" Value="Green"/>
+                                            </DataTrigger>
+                                            <DataTrigger TargetType="Label" Binding="{Binding Path=type}" Value="{x:Static my:EntryType.DEBIT}">
+                                                <Setter Property="TextColor" Value="Red"/>
+                                            </DataTrigger>
+                                        </Label.Triggers>
+                                    </Label>
+                                    <Button x:Name="btnEdit" ImageSource="edit.png" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" CommandParameter="{Binding}" VerticalOptions="CenterAndExpand" Clicked="btnEdit_Clicked"/>
+                                    <Button x:Name="btnDelete" ImageSource="trash.png" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" CommandParameter="{Binding}" VerticalOptions="CenterAndExpand" Clicked="btnDelete_Clicked"/>
+                                </Grid>
+                            </Frame>
+                        </ViewCell.View>
+                    </ViewCell>                    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="btnAddEntry" Text="Adicionar Entrada" Clicked="btnAddEntry_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFinanceiro.EntryPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Título"/>
+            <Entry x:Name="txtTitle"/>
+            <Label Text="Valor"/>
+            <Entry x:Name="txtValue" Keyboard="Numeric"/>
+            <Picker x:Name="debitCreditPicker"
+                    Title="Selecione o Tipo">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Crédito (+)</x:String>
+                        <x:String>Débito (-)</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Button x:Name="btnSaveUserEntry" Text="Salvar" Clicked="btnSaveUserEntry_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
